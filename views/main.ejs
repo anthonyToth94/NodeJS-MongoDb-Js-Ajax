@@ -1,0 +1,11 @@
+<main>
+  <div class="itemlist">
+    <h3>Items</h3>
+    <% for(elem of list) { %>
+    <div class="content">
+      <p><%= elem.name %></p>
+      <button class="delete" data-productid="<%= elem._id %>">DELETE</button>
+    </div>
+    <% } %>
+  </div>
+</main>
